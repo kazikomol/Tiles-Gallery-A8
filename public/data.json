@@ -1,0 +1,122 @@
+[
+  {
+    "id": "tile_001",
+    "title": "Ceramic Blue Tile",
+    "description": "Premium ceramic tile with glossy blue finish for modern interiors.",
+    "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f",
+    "category": "Ceramic",
+    "price": 24.99,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "tile_002",
+    "title": "Marble White Tile",
+    "description": "Elegant white marble-look porcelain tile with polished surface.",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "category": "Porcelain",
+    "price": 39.99,
+    "currency": "USD",
+    "dimensions": "80x80 cm",
+    "material": "Porcelain",
+    "inStock": true
+  },
+  {
+    "id": "tile_003",
+    "title": "Concrete Grey Tile",
+    "description": "Industrial-style concrete finish tile suitable for floors and walls.",
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858",
+    "category": "Concrete",
+    "price": 29.99,
+    "currency": "USD",
+    "dimensions": "60x120 cm",
+    "material": "Porcelain",
+    "inStock": true
+  },
+  {
+    "id": "tile_004",
+    "title": "Wood Oak Tile",
+    "description": "Natural oak wood-look tile with textured matte finish.",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "category": "Wood Look",
+    "price": 34.99,
+    "currency": "USD",
+    "dimensions": "20x120 cm",
+    "material": "Porcelain",
+    "inStock": false
+  },
+  {
+    "id": "tile_005",
+    "title": "Black Slate Tile",
+    "description": "Premium black slate textured tile for luxury interiors.",
+    "image": "https://images.unsplash.com/photo-1494526585095-c41746248156",
+    "category": "Slate",
+    "price": 49.99,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Natural Stone",
+    "inStock": true
+  },
+  {
+    "id": "tile_006",
+    "title": "Beige Sand Tile",
+    "description": "Warm beige tile with smooth matte finish for living spaces.",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "category": "Ceramic",
+    "price": 27.50,
+    "currency": "USD",
+    "dimensions": "30x60 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "tile_007",
+    "title": "Mosaic Glass Tile",
+    "description": "Decorative blue glass mosaic tile for kitchens and bathrooms.",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    "category": "Mosaic",
+    "price": 59.99,
+    "currency": "USD",
+    "dimensions": "30x30 cm",
+    "material": "Glass",
+    "inStock": true
+  },
+  {
+    "id": "tile_008",
+    "title": "Travertine Stone Tile",
+    "description": "Classic travertine-style tile with natural stone appearance.",
+    "image": "https://images.unsplash.com/photo-1448630360428-65456885c650",
+    "category": "Stone",
+    "price": 44.99,
+    "currency": "USD",
+    "dimensions": "60x90 cm",
+    "material": "Stone",
+    "inStock": false
+  },
+  {
+    "id": "tile_009",
+    "title": "Hexagon White Tile",
+    "description": "Modern hexagonal white tile with matte finish.",
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750",
+    "category": "Hexagon",
+    "price": 31.99,
+    "currency": "USD",
+    "dimensions": "25x25 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "tile_010",
+    "title": "Terrazzo Pattern Tile",
+    "description": "Stylish terrazzo-inspired tile for contemporary homes.",
+    "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118",
+    "category": "Terrazzo",
+    "price": 42.99,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Porcelain",
+    "inStock": true
+  }
+]
