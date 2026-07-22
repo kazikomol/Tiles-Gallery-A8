@@ -1,6 +1,7 @@
 "use client"
 import { Button, Card, Chip } from '@heroui/react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { BiDollar } from 'react-icons/bi';
 
@@ -12,6 +13,7 @@ const TileCard = ({tiles}) => {
             <Card className='items-center border' >
                 <div className='relative w-full aspect-square'>
                      <Image 
+                     sizes="(max-width: 768px) 100vw, 33vw"
                 src={tiles.image} 
                 alt='tiles' 
                 
@@ -28,7 +30,10 @@ const TileCard = ({tiles}) => {
                   <BiDollar className='size-6' /> <p className='text-xl'>{tiles.price}{tiles.currency}</p>
                 </div>
                
+                    <Link href={`/all-tiles/${tiles.id}`}>
                     <Button className={'w-full'} variant="secondary">Details</Button>
+                    
+                    </Link>
                 
             </Card>
             
