@@ -37,21 +37,19 @@ const Navbar = () => {
           <li>
             <Link href={"/all-tiles"}>All Tiles</Link>
           </li>
-          <li>
-            <Link href={"/pricing"}>Pricing</Link>
-          </li>
+          
           <li>
             <Link href={"/profile"}>Profile</Link>
           </li>
         </ul>
 
       <div className="flex gap-4">
-       { !user &&   <ul className="flex items-center  text-sm">
+       { !user &&   <ul className="flex items-center gap-2  text-sm">
           <li>
-            <Link href={"/signup"}>SignUp</Link>
+           <Link href={"/signup"}> <Button> SignUp</Button></Link>
           </li>
           <li>
-            <Link href={"/signin"}>SignIn</Link>
+            <Link href={"/signin"}><Button>SignIn</Button></Link>
           </li>
         </ul>}
         {
