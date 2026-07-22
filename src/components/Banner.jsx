@@ -4,6 +4,8 @@ import { Button } from "@heroui/react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect, useMemo } from "react";
+import BrandsLogo from "./shared/BrandsLogo";
+
 
 const DEFAULT_IMAGE = "https://images.pexels.com/photos/36394708/pexels-photo-36394708.jpeg";
 
@@ -35,7 +37,7 @@ const Banner = ({ tiles = [] }) => {
   const activeImage = images[currentIdx] || DEFAULT_IMAGE;
 
   return (
-    <div className="relative h-[80vh] w-full overflow-hidden rounded-lg shadow-2xl bg-black">
+    <><div className="relative h-[80vh] w-full overflow-hidden rounded-lg shadow-2xl bg-black">
       {/* Background Image Crossfade */}
       <AnimatePresence mode="popLayout">
         <motion.div
@@ -45,8 +47,7 @@ const Banner = ({ tiles = [] }) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
           style={{ backgroundImage: `url('${activeImage}')` }}
-          className="absolute inset-0 bg-cover bg-no-repeat bg-center"
-        />
+          className="absolute inset-0 bg-cover bg-no-repeat bg-center" />
       </AnimatePresence>
 
       {/* Hero Content */}
@@ -91,8 +92,10 @@ const Banner = ({ tiles = [] }) => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </div></>
+
   );
+  
 };
 
 export default Banner;

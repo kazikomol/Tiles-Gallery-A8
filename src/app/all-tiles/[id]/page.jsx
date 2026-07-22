@@ -14,7 +14,7 @@ const TilesDetailsPage = async ({ params }) => {
   return (
     <Card className="w-full items-stretch md:flex-row p-4 gap-6">
       {/* Increased height: h-96 on mobile, min-h-[400px] on desktop */}
-      <div className="relative h-96 w-full md:min-h-[400px] md:w-1/2 shrink-0 overflow-hidden rounded-2xl">
+      <div className="relative h-96 w-full md:min-h-100 md:w-1/2 shrink-0 overflow-hidden rounded-2xl">
         <Image 
           sizes="(max-width: 768px) 100vw, 50vw"
           src={tiles.image} 

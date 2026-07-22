@@ -1,14 +1,15 @@
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import "react-toastify/dist/ReactToastify.css"; // <-- Add this
+
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import { ToastContainer } from "react-toastify";
 
 const OutfitFont = Outfit({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-
-
 
 export const metadata = {
   title: "Tiles-Gallery",
@@ -19,17 +20,22 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      data-theme='light'
-      className={`${OutfitFont.className}  h-full antialiased`}
+      data-theme="light"
+      className={`${OutfitFont.className} h-full antialiased`}
     >
-      <body className="container mx-auto ">
-        <Navbar></Navbar>
-        
+      <body>
+        <Navbar />
+
         {children}
 
-      <Footer/>
-        
-        </body>
+        <Footer />
+
+        <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          theme="light"
+        />
+      </body>
     </html>
   );
 }
