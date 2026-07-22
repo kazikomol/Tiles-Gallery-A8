@@ -1,86 +1,73 @@
 [
   {
     "id": "cat_001",
-    "name": "Ceramic Tiles",
+    "name": "Ceramic ",
     "slug": "ceramic",
     "description": "Durable and affordable ceramic tiles for floors and walls.",
     "image": "/images/categories/ceramic.jpg"
   },
   {
     "id": "cat_002",
-    "name": "Porcelain Tiles",
+    "name": "Porcelain ",
     "slug": "porcelain",
     "description": "Premium porcelain tiles with high strength and low water absorption.",
     "image": "/images/categories/porcelain.jpg"
   },
   {
     "id": "cat_003",
-    "name": "Marble Tiles",
+    "name": "Marble ",
     "slug": "marble",
     "description": "Luxury marble-look tiles for elegant interiors.",
     "image": "/images/categories/marble.jpg"
   },
   {
     "id": "cat_004",
-    "name": "Granite Tiles",
+    "name": "Granite ",
     "slug": "granite",
     "description": "Highly durable granite tiles for residential and commercial spaces.",
     "image": "/images/categories/granite.jpg"
   },
   {
     "id": "cat_005",
-    "name": "Wood Look Tiles",
+    "name": "Wood Look ",
     "slug": "wood-look",
     "description": "Tiles that replicate the warmth and texture of natural wood.",
     "image": "/images/categories/wood-look.jpg"
   },
   {
     "id": "cat_006",
-    "name": "Mosaic Tiles",
+    "name": "Mosaic ",
     "slug": "mosaic",
     "description": "Decorative mosaic tiles perfect for bathrooms and kitchens.",
     "image": "/images/categories/mosaic.jpg"
   },
   {
     "id": "cat_007",
-    "name": "Subway Tiles",
+    "name": "Subway ",
     "slug": "subway",
     "description": "Classic rectangular subway tiles for modern wall designs.",
     "image": "/images/categories/subway.jpg"
   },
   {
     "id": "cat_008",
-    "name": "Hexagon Tiles",
+    "name": "Hexagon",
     "slug": "hexagon",
     "description": "Modern hexagonal tiles for unique interior styles.",
     "image": "/images/categories/hexagon.jpg"
   },
   {
     "id": "cat_009",
-    "name": "Terrazzo Tiles",
+    "name": "Terrazzo ",
     "slug": "terrazzo",
     "description": "Contemporary terrazzo-inspired tiles with colorful patterns.",
     "image": "/images/categories/terrazzo.jpg"
   },
   {
     "id": "cat_010",
-    "name": "Outdoor Tiles",
+    "name": "Outdoor",
     "slug": "outdoor",
     "description": "Weather-resistant tiles designed for outdoor applications.",
     "image": "/images/categories/outdoor.jpg"
-  },
-  {
-    "id": "cat_011",
-    "name": "Bathroom Tiles",
-    "slug": "bathroom",
-    "description": "Water-resistant tiles ideal for bathrooms and wet areas.",
-    "image": "/images/categories/bathroom.jpg"
-  },
-  {
-    "id": "cat_012",
-    "name": "Kitchen Tiles",
-    "slug": "kitchen",
-    "description": "Stylish backsplash and floor tiles for modern kitchens.",
-    "image": "/images/categories/kitchen.jpg"
   }
+  
 ]

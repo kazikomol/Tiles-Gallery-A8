@@ -1,6 +1,7 @@
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import "react-toastify/dist/ReactToastify.css"; // <-- Add this
+import 'animate.css';
+import "react-toastify/dist/ReactToastify.css"; 
 
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
