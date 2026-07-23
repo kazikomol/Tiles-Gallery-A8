@@ -1,69 +1,80 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
 import { Avatar, Button } from "@heroui/react";
-import { any } from "better-auth";
-import { div } from "framer-motion/client";
 import Image from "next/image";
 import Link from "next/link";
-// import logo from "../../public/logo.png";
+
 
 const Navbar = () => {
   const userData = authClient.useSession();
-  const user = userData.data?.user
-  
+  const user = userData.data?.user;
 
-  const handleSignOut = async() =>{
+  const handleSignOut = async () => {
     await authClient.signOut();
-  }
+  };
+
   return (
     <div className="border-b px-2">
-      <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
-        <Link href={"/"}><div className="flex gap-2 items-center" >
-          <Image
-            src={"/logo.png"}
-            alt="logo"
-            loading="eager"
-            width={80}
-            height={70}
-            className="object-cover h-auto w-max"
-          />
-         
-        </div></Link>
+      <nav className="flex flex-col md:flex-row justify-between items-center py-3 max-w-7xl mx-auto w-full gap-4">
+        <Link href={"/"}>
+          <div className="flex gap-2 items-center">
+            <Image
+              src={"/logo.png"}
+              alt="logo"
+              loading="eager"
+              width={80}
+              height={70}
+              className="object-cover h-auto w-max"
+            />
+          </div>
+        </Link>
 
-        <ul className="flex items-center gap-5 text-sm">
+        <ul className="flex flex-wrap justify-center items-center gap-3 md:gap-5 text-sm">
           <li>
             <Link href={"/"}>Home</Link>
           </li>
           <li>
             <Link href={"/all-tiles"}>All Tiles</Link>
           </li>
-          
+
           <li>
             <Link href={"/profile"}>Profile</Link>
           </li>
         </ul>
 
-      <div className="flex gap-4">
-       { !user &&   <ul className="flex items-center gap-2  text-sm">
-          <li>
-           <Link href={"/signup"}> <Button> SignUp</Button></Link>
-          </li>
-          <li>
-            <Link href={"/signin"}><Button>SignIn</Button></Link>
-          </li>
-        </ul>}
-        {
-          user && <div className="flex gap-4">
-            <Avatar size="sm">
-        <Avatar.Image alt="John Doe" src={user?.image}
-        referrerPolicy="no-referrer" />
-        <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
-      </Avatar>
+        <div className="flex flex-wrap justify-center items-center gap-4">
+          {!user && (
+            <ul className="flex flex-wrap items-center gap-2 text-sm">
+              <li>
+                <Link href={"/signup"}>
+                  <Button>SignUp</Button>
+                </Link>
+              </li>
+              <li>
+                <Link href={"/signin"}>
+                  <Button>SignIn</Button>
+                </Link>
+              </li>
+            </ul>
+          )}
 
-      <Button onClick={handleSignOut} variant="danger">Sign Out</Button>
-          </div>
-        }
-      </div>
+          {user && (
+            <div className="flex items-center gap-4">
+              <Avatar size="sm">
+                <Avatar.Image
+                  alt="John Doe"
+                  src={user?.image}
+                  referrerPolicy="no-referrer"
+                />
+                <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
+              </Avatar>
+
+              <Button onClick={handleSignOut} variant="danger">
+                Sign Out
+              </Button>
+            </div>
+          )}
+        </div>
       </nav>
     </div>
   );
